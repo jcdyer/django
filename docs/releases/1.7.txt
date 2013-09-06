@@ -276,6 +276,16 @@ Templates
   :setting:`TEMPLATE_DEBUG` is ``True``. This allows template origins to be
   inspected and logged outside of the ``django.template`` infrastructure.
 
+Tests
+^^^^^
+
+* :class:`~django.test.runner.DiscoverRunner` has two new attributes, 
+  :attr:`test_suite` and :attr:`test_runner`, which facilitate
+  overriding the way tests are collected and run.  Documentation has been 
+  added for the similar :attr:`test_loader` attribute
+  which has been in place since 1.6.
+
+
 Backwards incompatible changes in 1.7
 =====================================
 
